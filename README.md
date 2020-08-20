@@ -19,7 +19,9 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
 
     sudo nano /boot/cmdline.txt
 
-    dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
+    dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 
+    elevator=deadline fsck.repair=yes 
+    rootwait quiet splash plymouth.ignore-serial-consoles
 
     sudo nano /boot/config.txt
 
