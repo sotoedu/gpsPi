@@ -9,10 +9,10 @@ https://medium.com/@DefCon_007/using-a-gps-module-neo-7m-with-raspberry-pi-3-451
 
 https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
 
-VCC — 5v(pin 2)
-GND — Pi’s ground(pin 6)
-RX — Pi’s TX
-TX — Pi’s RX
+    VCC — 5v(pin 2)
+    GND — Pi’s ground(pin 6)
+    RX — Pi’s TX
+    TX — Pi’s RX
 
 
 # Step1
