@@ -52,6 +52,13 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
     sudo python serial_gps.py
     
     sudo python lat.py
+    
+    pi@RPI01:~/workspace/python-gps-examples $ sudo python lat.py
+    Receiving GPS data
+    ---Parsing GPRMC--- time : 08:00:36, latitude : 33 deg 17.78132 min(N), longitude : 126 deg 42.62555 min(E), speed : 1.305, True Course : , Date : 20/08/20
+    ---Parsing GPRMC--- time : 08:00:37, latitude : 33 deg 17.78128 min(N), longitude : 126 deg 42.62557 min(E), speed : 0.494, True Course : , Date : 20/08/20
+    ---Parsing GPRMC--- time : 08:00:38, latitude : 33 deg 17.78113 min(N), longitude : 126 deg 42.62577 min(E), speed : 0.725, True Course : , Date : 20/08/20
+
 
 
 
