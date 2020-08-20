@@ -1,8 +1,10 @@
 import serial
  
 port = "/dev/ttyAMA0"
- 
+cnt = 0 
+
 def parseGPS(data):
+    global cnt
 #    print "raw:", data #prints raw data
     if data[0:6] == "$GPRMC":
         sdata = data.split(",")
@@ -18,8 +20,9 @@ def parseGPS(data):
         speed = sdata[7]       #Speed in knots
         trCourse = sdata[8]    #True course
         date = sdata[9][0:2] + "/" + sdata[9][2:4] + "/" + sdata[9][4:6]#date
+        cnt = cnt + 1 
  
-        print "time : %s, latitude : %s(%s), longitude : %s(%s), speed : %s, True Course : %s, Date : %s" %  (time,lat,dirLat,lon,dirLon,speed,trCourse,date)
+        print "no:%s, time : %s, latitude : %s(%s), longitude : %s(%s), speed : %s, True Course : %s, Date : %s" %  (cnt, time,lat,dirLat,lon,dirLon,speed,trCourse,date)
  
 def decode(coord):
     #Converts DDDMM.MMMMM > DD deg MM.MMMMM min
