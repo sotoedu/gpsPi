@@ -49,7 +49,10 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
     or
     cgps -s
 
-     sudo python serial_gps.py
+    sudo python serial_gps.py
+    
+    sudo python lat.py
+
 
 
 
