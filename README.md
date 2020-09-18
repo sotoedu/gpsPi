@@ -27,7 +27,8 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
     sudo nano /boot/config.txt
 
     dtparam=spi=on
-    dtoverlay=pi3-disable-bt
+    #dtoverlay=pi3-disable-bt
+    dtoverlay=pi3-miniuart-bt
     core_freq=250
     enable_uart=1
     force_turbo=1
