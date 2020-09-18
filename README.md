@@ -34,6 +34,8 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
     init_uart_baud=9600
 
     sudo reboot now
+    
+    sudo apt-get install gpsd gpsd-clients
 
     sudo stty -F /dev/ttyAMA0 9600
     sudo killall gpsd
