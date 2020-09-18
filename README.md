@@ -51,6 +51,9 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
     cat /dev/ttyAMA0
     or
     cgps -s
+    or
+    gpspipe -r
+
 
     sudo python serial_gps.py
     
